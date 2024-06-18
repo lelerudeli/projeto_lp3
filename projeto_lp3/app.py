@@ -1,6 +1,6 @@
-from flask import Flask 
+from flask import Flask, render_template
 
-app = Flask("Minha App")
+app = Flask(__name__)
 
 # rota + função
 
@@ -8,25 +8,25 @@ app = Flask("Minha App")
 @app.route("/")
 
 def home():
-    return "<h1>Home Page </h1>"
-
-# /Perfil - conta usuario
-@app.route("/Perfil")
-
-def contato():
-    return "<h1>Sua conta</h1>"
-
+    return render_template ("home.html")
 
 
 # /contato - pagina de contato 
 @app.route("/contato")
 
 def contato():
-    return "<h1>xaaaama bb *foguinho *foguinho</h1>"
+    return render_template ("contato.html")
 
 
 # /produtos - pagina produtos 
 @app.route("/produtos")
 
 def produtos():
-    return "<h1> meus produtinhooos</h1>"
+
+    lista_produtos = [
+        {"nome": "coquinha bb", "desc": "ruim"},
+        {"nome": "doritos", "desc": "suja a mao"},
+        {"nome": "sneakers", "desc": "meu choc preferido"}
+    ]
+
+    return render_template ("produtos.html", produtos=lista_produtos)
