@@ -1,0 +1,33 @@
+{% extends "base_politicas.html" %}
+
+{% block title %}Como Utilizar{% endblock %}
+
+{% block content %}
+    <h1>Como Utilizar</h1>
+
+    <h2>Navegação</h2>
+    <p>
+        Utilize o menu no topo da página para navegar entre as diferentes seções do site:
+    </p>
+    <ul>
+        <li><a href="/">Home</a>: Página inicial com informações gerais.</li>
+        <li><a href="/contato">Contato</a>: Formulário para entrar em contato conosco.</li>
+        <li><a href="/produtos">Produtos</a>: Lista dos nossos produtos.</li>
+        <li><a href="/cadastro">Cadastro de Produtos</a>: Área para cadastrar novos produtos (restrita).</li>
+    </ul>
+
+    <h2>Busca de Produtos</h2>
+    <p>
+        Na página "Produtos", você pode utilizar a barra de busca para encontrar produtos específicos por nome ou descrição.
+    </p>
+
+    <h2>Cadastro de Produtos</h2>
+    <p>
+        Se você tiver permissão, poderá acessar a área de "Cadastro de Produtos" para adicionar novos produtos ao catálogo. Para isso, preencha o formulário com as informações do produto e clique em "Salvar".
+    </p>
+
+    <h2>Informações Adicionais</h2>
+    <p>
+        Para mais informações sobre o uso do site, consulte os <a href="/termos">Termos de Uso</a> e a <a href="/politica">Política de Privacidade</a>.
+    </p>
+{% endblock %}

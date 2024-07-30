@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd; 
+    text-align: center;
+}
+
+nav {
+    max-width: 960px; 
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+nav a {
+    color: #0056b3; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 960px;
+    margin: 0px auto;
+    margin-top: -30px;
+    padding: 0 20px;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #000000; 
+}
+
+h1 {
+    margin-bottom: -20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f0f0f0; 
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #ddd; 
+}
+
+footer a {
+    color: #333; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container form {
+    /* Formulário */
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container form input{
+    /* Email e Telefone*/
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container form button[type="submit"] {
+    /* Enviar*/
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 14px;
+}
