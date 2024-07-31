@@ -1,21 +1,24 @@
 
-body {
+*{
     font-family: sans-serif;
-    line-height: 1.6;
     margin: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0;
-    padding: 0 20px; 
+    justify-items: center;
+    justify-content: center;
 }
 
 header {
     background-color: #f0f0f0;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd; 
     text-align: center;
+}
+
+.container {
+    max-width: 850px;
+    margin-left: 150px;
+    padding: 15px 20px; 
+    text-align: justify;
+    margin-bottom: 60px;
 }
 
 nav {
@@ -24,21 +27,25 @@ nav {
     display: flex; 
     justify-content: space-between; 
 }
+
 nav a {
     display: inline-block;
-    margin:15px;
+    margin: 0px 15px;
     text-decoration: none;
-    color: #0056B3;
+    color: #7a00b3;
     font-weight: bold;
 
 }
 
-
 footer {
     background-color: #f0f0f0;
-    padding: 20px 0x;
+    padding: 15px 0px;
     text-align: center;
     border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .container h1 {

@@ -1,12 +1,16 @@
-body {
+/* Aplicar uma fonte padrão e alinhamento */
+* {
     font-family: sans-serif;
     line-height: 1.6;
     margin: 0;
+    padding: 0; /* Adicionado para garantir que não haja padding padrão */
+    box-sizing: border-box; /* Adicionado para incluir padding e border na largura total dos elementos */
+    justify-content: center;
 }
 
 header {
     background-color: #f0f0f0;
-    padding: 20px 0;
+    padding: 10px 0; /* Diminuído de 20px */
     border-bottom: 1px solid #ddd; 
     text-align: center;
 }
@@ -19,7 +23,7 @@ nav {
 }
 
 nav a {
-    color: #0056b3; 
+    color: #7a00b3; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -27,28 +31,32 @@ nav a {
 /* Conteúdo principal */
 main {
     max-width: 960px;
-    margin: 0px auto;
-    margin-top: -30px;
+    margin: 20px auto; /* Ajustado para adicionar margem superior */
     padding: 0 20px;
 }
 
-.container {
+.content {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 1.5em; /* Diminuído de 2em */
     color: #000000; 
 }
 
 h1 {
-    margin-bottom: -20px;
+    margin-bottom: 20px; /* Ajustado para adicionar margem inferior */
+    font-size: 2.5em; /* Diminuído de tamanho maior */
 }
 
 /* Rodapé */
 footer {
-    background-color: #f0f0f0; 
-    padding: 15px 0;
+    background-color: #f0f0f0;
+    padding: 10px 0px;
     text-align: center;
-    border-top: 1px solid #ddd; 
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 footer a {
@@ -57,34 +65,38 @@ footer a {
     margin: 0 10px;
 }
 
-.container form {
+.content form {
     /* Formulário */
     width: 100%; 
     max-width: 400px; 
     margin: 0 auto; 
-    margin-top: 10px;
+    margin-top: 20px; /* Ajustado para aumentar a margem superior */
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 5px;
 }
 
-.container form input{
-    /* Email e Telefone*/
-    width: 90%;
+.content form input, textarea {
+    /* Email e Telefone */
+    width: 100%; /* Ajustado para ocupar a largura total */
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    margin-bottom: 10px; /* Ajustado para diminuir o espaço entre os campos */
+    border: 1px solid #000;
     border-radius: 3px;
 }
 
-.container form button[type="submit"] {
-    /* Enviar*/
-    background-color: #007bff;
+.content form button[type="submit"] {
+    /* Enviar */
+    background-color: rgb(30, 30, 255);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100px;
+    width: 100%; 
     font-size: 14px;
+
+    &:hover{
+        background-color: rgb(22, 22, 170);
+    }
 }

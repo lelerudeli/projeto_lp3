@@ -48,7 +48,7 @@ def como_usar():
 
 @app.route("/politicas")
 def politicas():
-    return render_template("politica.html")
+    return render_template("politicas.html")
 
 @app.route("/termos")
 def termos():
