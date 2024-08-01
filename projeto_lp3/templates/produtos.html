@@ -5,18 +5,18 @@
 {% block content %}
 
     <h1>Produtos</h1>
+    <p style="margin-bottom: 15px;">Confira nossos produtos:</p>
 
     {% if produtos %}
-            <p>Confira nossos produtos</p>
 
-                {% for produto in produtos %}
-                <h2>{{produto.nome}}</h2>
-                <p>{{produto.desc}}</p>
-                {% endfor %}
-        
-        {% else %}
-            <p>Aguarde o lançamento dos produtos!</p>
-
-        {% endif %}
+        {% for produto in produtos %}
+        <h2>{{produto.nome}}</h2>
+        <p>{{produto.desc}}</p>
+        <img style="height:130px; margin-bottom: 22px;" src="{{produto.img}}" alt="foto">
+        {% endfor %}
+    
+    {% else %}
+        <p>Aguarde o lançamento dos produtos!</p>
+    {% endif %}
 
 {% endblock %}
